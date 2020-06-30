@@ -22,6 +22,17 @@ nodemon as a development dependency is:
   npm i -D nodemon
 ```
 
+Now, start the server using:
+
+```cmd
+  npm run schema-app
+```
+
+Use the <code>port</code> 5000 with localhost:
+
+localhost:5000/
+
+Paste the above url in your browser and explore.
 
 ## Author
 
