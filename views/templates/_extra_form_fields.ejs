@@ -1,0 +1,30 @@
+<%= form %>
+<div class="form-group">
+  <label for="title">Title</label>
+  <input required value="<%= form.title %>" type="text" name="title" id="title" class="form-control">
+</div>
+<div class="form-group">
+  <label for="date">Date</label>
+  <input readonly="" required value="<%= form.date %>" name="date" id="date"  class="form-control">
+</div>
+<br>
+<select class="custom-select" name="status">
+  <option selected value="Available"><%= form.status %></option>
+  <option value="Archived">Archived</option>
+  <option value="Down">Down</option>
+  <option value="Roasted">Roasted</option>
+</select>
+<br>
+<br>
+<div class="form-group">
+  <label for="draft">Draft</label>
+  <input class="pull-left" value="<%= form.draft %>" type="checkbox" checked name="draft" id="draft" class="form-control">
+</div>
+<div class="form-group">
+  <label for="age">Age</label>
+  <input required value="<%= form.age %>" type="number" name="age" id="age"  class="form-control">
+</div>
+  <!-- <input required value="<%= form.connections %>" > -->
+<a href="/" class="btn btn-warning">Check Others</a>
+<button type="submit" class="btn btn-success">Save</button>
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>All Items saved via Schema</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mb-4">All Items saved via Schema</h1>
+    <a href="/form"  style="text-decoration:unset" class="btn-lg btn-primary">Create an Item</a>
+    <% all_items.forEach(item => { %>
+      <div class="card mt-4">
+        <div class="card-body">
+          <h4 class="card-title">
+            Name: <%= item.title %>
+          </h4>
+          <div class="card-subtitle text-muted mb-2">
+            Date: <%= item.date.toLocaleDateString() %>
+          </div>
+          <div class="card-subtitle text-muted mb-2">
+            Availability: <%= item.status %>
+          </div>
+          <div class="card-text mb-2">
+            Draft: <%= item.draft %>
+          </div>
+          <div class="card-text mb-2">
+            Age: <%= item.age %>
+          </div>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+</body>
+</html>
+
