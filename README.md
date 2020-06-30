@@ -3,6 +3,7 @@ A simple Nodejs/Express web application showing practical use of schema in mongo
 Built primarily to aid <a href= "https://www.joint-access-programmer.com/mongoose-schema-types/" >this article</article>
 
 ## Installation
+First initiate a new nodejs project by generating a package.json file by:
 
 ```cmd
   npm init -y
