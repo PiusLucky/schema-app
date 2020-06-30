@@ -4,14 +4,21 @@ Built primarily to aid <a href= "https://www.joint-access-programmer.com/mongoos
 
 ## Installation
 
-
-
-## Color Scheme
-
-The color scheme used in designing the project from scratch involves three main colors:
-
 ```cmd
   npm init -y
+```
+
+then, install all the required modules like so:
+
+```cmd
+  npm i ejs express mongoose
+```
+
+Finally, you need nodemon to watch for file changes and restart the server automatically. The command for installing
+nodemon as a development dependency is:
+
+```cmd
+  npm i -D nodemon
 ```
 
 
